@@ -3,12 +3,12 @@
     x:Class="Rodriguez_EjemploApi.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:Rodriguez_EjemploApi"
+    xmlns:local="clr-namespace:Rodriguez_EjemploApi.ARViews"
     Shell.FlyoutBehavior="Disabled">
 
     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
+        ContentTemplate="{DataTemplate local:ClimaActual}"
         Route="MainPage" />
 
 </Shell>
