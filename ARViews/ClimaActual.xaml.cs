@@ -22,7 +22,7 @@ public partial class ClimaActual : ContentPage
 			using (var client  = new HttpClient()) 
 			
 			{
-				string url = $"https://api.openweathermap.org/data/2.5/weather?Lat=" + latitud + "&lon=" + longitud + "&appid= ";
+				string url = $"https://api.openweathermap.org/data/2.5/weather?lat=" + latitud + "&lon=" + longitud + "&appid=49f2e8e06a0664992f6a284032e3af82";
 					var response = await client.GetAsync(url);
 				if(response.IsSuccessStatusCode)
 				
@@ -32,7 +32,7 @@ public partial class ClimaActual : ContentPage
 
 					weatherLabel.Text = clima.weather[0].main;
 					cityLabel.Text = clima.name;
-					countryLabel.Text = clima.name;
+					countryLabel.Text = clima.sys.country;
 				}
 			}
 
