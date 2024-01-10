@@ -32,6 +32,7 @@ public partial class ClimaActual : ContentPage
 
 					weatherLabel.Text = clima.weather[0].main;
 					cityLabel.Text = clima.name;
+					countryLabel.Text = clima.name;
 				}
 			}
 

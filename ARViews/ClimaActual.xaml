@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Rodriguez_EjemploApi.ARViews.ClimaActual"
-             Title="ClimaActual">
+             Title="AnthonyRodriguez_ClimaActual">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="20" />
@@ -30,6 +30,9 @@
 
         <Label x:Name="weatherLabel" Grid.Row="4" Grid.Column="1" />
         <Label Text="Ciudad:" Grid.Row="4" Grid.Column="2" />
+
+        <Label Text="Pais:" Grid.Row="5" Grid.Column="3" />
+        <Label x:Name="countryLabel" Grid.Row="4" Grid.Column="1" />
         <Label x:Name="cityLabel" Grid.Row="4" Grid.Column="1" />
 
     </Grid>
